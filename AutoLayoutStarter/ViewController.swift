@@ -68,29 +68,29 @@ class ViewController: UIViewController {
     purpleRectangle.bottomAnchor.constraint(equalTo: mainView.safeAreaLayoutGuide.bottomAnchor, constant: -20).isActive = true
     purpleRectangle.trailingAnchor.constraint(equalTo: mainView.safeAreaLayoutGuide.trailingAnchor, constant: -20).isActive = true
     purpleRectangle.widthAnchor.constraint(equalTo: mainView.widthAnchor, multiplier: 0.6).isActive = true
-    purpleRectangle.heightAnchor.constraint(equalToConstant: 60).isActive = true
+    purpleRectangle.heightAnchor.constraint(equalToConstant: 50).isActive = true
   }
   
-  // Make stack for blue lists
+  // Make stack for blue lists at the center of mainview
   func makeBlueListStack() {
     // Make first bluebox
     let blueBox1 = UIView()
     blueBox1.heightAnchor.constraint(equalToConstant: 50).isActive = true
-    blueBox1.widthAnchor.constraint(equalToConstant: 60).isActive = true
+    blueBox1.widthAnchor.constraint(equalToConstant: 50).isActive = true
     blueBox1.backgroundColor = .blue
     blueBox1.translatesAutoresizingMaskIntoConstraints = false
     
     // Make second bluebox
     let blueBox2 = UIView()
     blueBox2.heightAnchor.constraint(equalToConstant: 50).isActive = true
-    blueBox2.widthAnchor.constraint(equalToConstant: 60).isActive = true
+    blueBox2.widthAnchor.constraint(equalToConstant: 50).isActive = true
     blueBox2.backgroundColor = .blue
     blueBox2.translatesAutoresizingMaskIntoConstraints = false
     
     // Make third bluebox
     let blueBox3 = UIView()
     blueBox3.heightAnchor.constraint(equalToConstant: 50).isActive = true
-    blueBox3.widthAnchor.constraint(equalToConstant: 60).isActive = true
+    blueBox3.widthAnchor.constraint(equalToConstant: 50).isActive = true
     blueBox3.backgroundColor = .blue
     blueBox3.translatesAutoresizingMaskIntoConstraints = false
     
@@ -103,12 +103,13 @@ class ViewController: UIViewController {
     stackView.spacing = 0
     mainView.addSubview(stackView)
     
+    // Set constraints for stackview
     stackView.centerXAnchor.constraint(equalTo: mainView.centerXAnchor).isActive = true
     stackView.centerYAnchor.constraint(equalTo: mainView.centerYAnchor).isActive = true
     stackView.topAnchor.constraint(equalTo: mainView.safeAreaLayoutGuide.topAnchor, constant: 100).isActive = true
     stackView.bottomAnchor.constraint(equalTo: mainView.safeAreaLayoutGuide.bottomAnchor, constant: -100).isActive = true
     stackView.heightAnchor.constraint(equalTo:mainView.heightAnchor, multiplier: 0.7).isActive = true
-    stackView.widthAnchor.constraint(equalToConstant: 60).isActive = true
+    stackView.widthAnchor.constraint(equalToConstant: 50).isActive = true
   }
     
   // Make two orange blocks
@@ -116,15 +117,15 @@ class ViewController: UIViewController {
     // Make left orange block
     let orangeBlock1 = UIView()
     orangeBlock1.backgroundColor = .orange
-    orangeBlock1.heightAnchor.constraint(equalToConstant: 50).isActive = true
+    orangeBlock1.heightAnchor.constraint(equalToConstant: 40).isActive = true
     orangeBlock1.widthAnchor.constraint(equalToConstant: 90).isActive = true
     orangeBlock1.translatesAutoresizingMaskIntoConstraints = false
     
     // Make right orange block
     let orangeBlock2 = UIView()
     orangeBlock2.backgroundColor = .orange
-    orangeBlock2.heightAnchor.constraint(equalToConstant: 50).isActive = true
-    orangeBlock2.widthAnchor.constraint(equalToConstant: 50).isActive = true
+    orangeBlock2.heightAnchor.constraint(equalToConstant: 40).isActive = true
+    orangeBlock2.widthAnchor.constraint(equalToConstant: 70).isActive = true
     orangeBlock2.translatesAutoresizingMaskIntoConstraints = false
     
     // Make a stackview for two orange blocks
@@ -137,10 +138,11 @@ class ViewController: UIViewController {
     stackView2.translatesAutoresizingMaskIntoConstraints = false
     mainView.addSubview(stackView2)
     
+    // Set constraints for stackview
     stackView2.topAnchor.constraint(equalTo: mainView.safeAreaLayoutGuide.topAnchor, constant: 20).isActive = true
     stackView2.trailingAnchor.constraint(equalTo: mainView.safeAreaLayoutGuide.trailingAnchor, constant: -20).isActive = true
-//    stackView2.heightAnchor.constraint(equalToConstant: 70).isActive = true
-//    stackView2.widthAnchor.constraint(equalToConstant: 180).isActive = true
+    stackView2.heightAnchor.constraint(equalToConstant: 60).isActive = true
+    stackView2.widthAnchor.constraint(equalToConstant: 250).isActive = true
     stackView2.layoutMargins = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
     stackView2.isLayoutMarginsRelativeArrangement = true
 
